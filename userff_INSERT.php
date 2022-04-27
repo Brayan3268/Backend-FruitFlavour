@@ -11,7 +11,7 @@
             $email = $datos["email"];
             $cellphone = $datos["cellphone"];
             $passwordUser = $datos["passwordUser"];
-            $image = $datos["image"]; 
+            $image = $datos["image"];
 
             $respuesta = SQLGlobal::cudFiltro(
 				"insert into userff(idCard, nameUser, lastNameUser, email, cellphone, 
@@ -44,5 +44,5 @@
 					'error'=>$e->getMessage())
 			);
 		}
-1	}
+	}
 ?>
