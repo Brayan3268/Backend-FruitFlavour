@@ -3,7 +3,7 @@
 
 	if($_SERVER['REQUEST_METHOD']=='POST'){
 		try{
-					
+			$datos = json_decode(file_get_contents("php://input"),true);		
 			$respuesta = SQLGlobal::selectArrayFiltro(
 				"select * from dish",
 				array($email)
