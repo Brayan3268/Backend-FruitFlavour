@@ -8,8 +8,8 @@
             $idCard = $datos["idCard"]; // obtener parametros POST
 
 			$respuesta = SQLGlobal::cudFiltro(
-				"delete from userff where idcard = ?;",
-				array($email)
+				"delete from userff where idCard = ?;",
+				array($idCard)
 			);//con filtro ("El tamaño del array debe ser igual a la cantidad de los '?'")
 			echo json_encode(array(
 				'respuesta'=>'200',
