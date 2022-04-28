@@ -8,7 +8,7 @@
             $idCard = $datos["idCard"]; // obtener parametros POST
 
 			$respuesta = SQLGlobal::cudFiltro(
-				"delete from userff where idCard = ?;",
+				"delete from userff where idcard = ?;",
 				array($email)
 			);//con filtro ("El tamaño del array debe ser igual a la cantidad de los '?'")
 			echo json_encode(array(
