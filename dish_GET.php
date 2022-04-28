@@ -5,8 +5,7 @@
 		try{
 			$datos = json_decode(file_get_contents("php://input"),true);		
 			$respuesta = SQLGlobal::selectArrayFiltro(
-				"select * from dish",
-				array($email)
+				"select * from dish"
 			);//con filtro ("El tamaño del array debe ser igual a la cantidad de los '?'")
             if($respuesta){
                 echo json_encode(array(
